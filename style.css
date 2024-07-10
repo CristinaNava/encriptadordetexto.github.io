@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(236, 226, 236);
+}
+
+.text{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 10%;
+    top: 15%;
+    border: none;
+    font-size: 32px;
+    background-color: rgb(236, 226, 236);
+
+}
+
+.text::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+
+.text:focus,
+.text:active{
+    /*border: none;*/
+    outline: none;
+}
+
+.condition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 75%;
+}
+
+.condition p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(38, 2, 71);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1%, 0;
+    position: absolute;
+    width: 88%;
+    left: 10%;
+    top: 83%;
+}
+
+.buttonEncriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+    gap: 10px;
+    width: 25%;
+    background-color: rgb(87, 65, 107);
+    border-radius: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: rgb(77, 32, 65);
+}
+
+.buttonDesencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5%;
+    gap: 10px;
+    width: 25%;
+    background: rgb(235, 158, 216);
+    border: 1px, solid purple;
+    border-radius: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: rgb(63, 2, 48);
+}
+
+.buttonEncriptar:hover, .buttonDesencriptar:hover{
+    margin: 1%;
+    width: 30%;
+    padding: 1%;
+}
+
+.imgEncrypt{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: whitesmoke;
+    border-radius: 60px;
+}
+
+.messageEncrypt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    /*top: 65%;*/
+    text-align: center;
+}
+
+.messageEncrypt h2{
+    width: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: blueviolet;
+}
+
+.messageEncrypt p{
+    width: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: blueviolet;
+
+}
+
+.imgEncrypt img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+}
+
+.textTwo{
+    /*align-items: flex-end;*/
+    border: none;
+    text-align: center;
+}
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 95%;
+}
+
+.containerFooter p{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blueviolet;
+    
+}
+
+.linkedin{
+    width: 40px;
+    height: 40px;
+}
+/*@media (max-whidth: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encrypt{
+        width: 100%;
+    }
+
+    .text{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .condition{
+        width: 80%;
+        left: 10%;
+        top: 60%;
+    }
+
+         .condition p{
+            font-size: 15px;
+        }
+
+    .buttons{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .buttonEncriptar, .buttonDesencriptar{
+        width: 50%;
+        border-radius: 15px;
+    }
+
+        .buttonEncriptar:hover, .buttonDesencriptar:hover{
+            margin: 0.3%;
+            width: 50%;
+            padding: 1;
+        }
+
+    .imgEncrypt{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .messageEncrypt{
+        width: 100%;
+        top: 5%;
+    }
+
+    .imgEncrypt img{
+        top: 0;
+        display: none;
+       
+    }
+}*/
